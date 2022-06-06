@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App by Kevin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66994a06de.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,500;0,600;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logoname">
+            <div class="name">
+                <i class="fa-solid fa-umbrella"></i> Weather
+            </div>
+        </div>
+        <div class="settings">
+            <div class="check">
+                <div class="checkmode">
+                    Light Mode
+                </div>
+                <button class="checkbox" role="switch" aria-checked="false"></button>
+            </div>
+            <button class="units button">
+                Change Units
+            </button>
+        </div>
+    </div>
+    <div class="input">
+        <div class="inputtext">
+            <input type="text" class="cityname" placeholder="Enter Name of the City">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="button weatherloc">Show Weather from current location</div>
+    </div>
+    <div class="fullfullcont">
+        <div class="countryname"></div>
+        <div class="fullcont">
+            <div class="icont">
+                <div class="weatherdes"></div>
+                <div class="temp"></div>
+                <div class="icon"></div>
+            </div>
+            <div class="infocont">
+                <div class="grid">
+                    <div class="box">
+                        <i class="fa-solid fa-temperature-low"></i>
+                        <div class="tempmin val"></div>
+                        <div class="label">Min Temp</div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-temperature-high"></i>
+                        <div class="tempmax val"></div>
+                        <div class="label">Max Temp</div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="windspd val"></div>
+                        <div class="label">Wind Speed</div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="humidity val"></div>
+                        <div class="label">Humidity</div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                        <div class="pressure val"></div>
+                        <div class="label">Pressure</div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-cloud"></i>
+                        <div class="cloudper val"></div>
+                        <div class="label">Cloudiness</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="longi"></div>
+    <div class="latit"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
