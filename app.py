@@ -1,10 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 import requests
 import json
 import os
 
 app = Flask(__name__)
-# lat = 13.08 lon = 77.56
+CORS(app)
 
 d = open('secrets.json')
 jsondata = json.load(d)
