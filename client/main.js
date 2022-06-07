@@ -87,7 +87,7 @@ function bruhmoment(weathericon){
 }
 //fetching current location weather report
 weatherloc.addEventListener('click', () => {
-    fetch('url of deployed flask app/loc/' + latText.innerText + '/' + longText.innerText)
+    fetch('https://pythonflaskweather.herokuapp.com//loc/' + latText.innerText + '/' + longText.innerText)
         .then(response => response.json())
         .then(data => {
             var weathericon = data["weather"][0]["icon"]
@@ -107,7 +107,7 @@ weatherloc.addEventListener('click', () => {
 })
 //fetching cityname weather report
 searchbtn.addEventListener("click", function() {
-    fetch('url of deployed flask app/name/' + cityname.value)
+    fetch('https://pythonflaskweather.herokuapp.com//name/' + cityname.value)
         .then(response => response.json())
         .then(data => {
             var weathericon = data["weather"][0]["icon"]
