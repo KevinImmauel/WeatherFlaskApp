@@ -1,6 +1,7 @@
 from flask import Flask
 import requests
 import json
+import os
 
 app = Flask(__name__)
 # lat = 13.08 lon = 77.56
@@ -32,4 +33,5 @@ def getdataloc(lat, lon):
     return getlatlondata(lat, lon)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, port=port)
