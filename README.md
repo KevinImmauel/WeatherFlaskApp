@@ -3,6 +3,7 @@ Another Lame Weather Application using **OpenWeatherMap API**<br>
 Get current weather report by either typing the name of the city
 or using your current location<br>
 Literally the same project as the **PHP** one but built using **Python** and deployed using **Heroku**
+✨<a href="https://kevinimmauel.github.io/WeatherFlaskApp/client/index.html">Click Here! to open the App</a>✨
 ## UI ✏️
 ### Light Mode 😈
 ![unknown](https://user-images.githubusercontent.com/83702067/172372906-87cc7afa-02a4-448a-8012-c1b4395dc813.png)<br>
