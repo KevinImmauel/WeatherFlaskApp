@@ -12,13 +12,13 @@ jsondata = json.load(d)
 apikey = jsondata["apikey"]
 
 def getcitynamedata(cityname):
-    f = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid={apikey}')
+    f = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid={apikey}&units=metric')
     return f.text
 
 def getlatlondata(lat, lon):
     lat = float(lat)
     lon = float(lon)
-    f = requests.get(f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apikey}')
+    f = requests.get(f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={apikey}&units=metric')
     return f.text
 
 @app.route('/')
